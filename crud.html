@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- TITLE -->
+    <title>Makeup Box</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="crud.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <img src="logo.png" class="logo">
+        <div class="nav-content">
+          <a href="home.html">HOME</a>
+          <a href="crud.html">TOP 5</a>
+      </div>
+    </header>
+    <main>
+              <div class="container">
+                <div class="form-group">
+                  <h1>Top 5 Makeup</h1><br>
+                    <!--FILE FORM-->
+                    <label>File name:</label>
+                    <input id="fileName" type="text" class="form-control">
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <!--CONTENT FORM-->
+                    <label for="fileContents">Content:</label>
+                    <textarea id="fileContents" class="form-control" rows="5"></textarea>
+                </div>
+                <br>
+                <!--BUTTON-->
+                <center>
+                <button id="btnCreate" class="btn btn-default">Create</button> 
+                <button id="btnRead" class="btn btn-default">Read</button>
+                <button id="btnUpdate" class="btn btn-default">Update</button> 
+              </div>
+
+        <!--TABLE-->
+        <center>
+        <table id="fileTable">
+            <thead>
+                <tr>
+                    <th>Content</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="fileTableBody"></tbody>
+        </table>
+        </center>          
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="crud.js"></script>
+</body>
+</html>

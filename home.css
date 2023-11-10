@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f9c1e2 url('bf.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+/*dropdowns*/
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  width: 200px; 
+}
+
+/*navigation bar*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.546);
+  overflow: hidden;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 10px;
+}
+
+.navbar .logo {
+  width: 215px;
+  cursor: pointer;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 10px;
+}
+
+.nav-content {
+  text-align: right;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.nav-content a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #DDD8C3;
+}
+
+.nav-content a:hover {
+  color: #daca8c;
+}
+
+.button-container {
+  position: absolute;
+  margin-top: 20px;
+  top: 10px;
+  right: 10px;
+}
+
+.top-right-button {
+  padding: 10px 20px;
+  background-color: #d22d85;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*product list*/
+ul#productList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+/*product container*/
+ul#productList li {
+  flex-basis: calc(24% - 20px); 
+  margin-left: 1%; 
+  margin-right: 1%; 
+  background-color: rgba(255, 255, 255, 0.897);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease; 
+  margin-bottom: 20px; 
+  color: black;
+  padding: 20px; 
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
+ul#productList li:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+/*product links*/
+.product-container a {
+  color: #d22d85;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.product-container a:hover {
+  color: #f19fcf;
+}
+
+/*form container*/
+.form-container {
+  display: flex;
+  align-items: center;
+}
+
+.product-container:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.product-container img {
+  transition: transform 0.3s ease;
+}
+
+.product-container img:hover {
+  transform: scale(1.1);
+}
+
+/*product links*/
+.product-container a {
+  color: #d22d85; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.product-container a:hover {
+  color: #f19fcf;
+}
+
+/*modal display*/
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 30%;
+  color: grey;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Container settings */
+.container {
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 50px auto; 
+  max-width: 700px;
+}
+
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*input field and dropdown*/
+input[type="text"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*heading*/
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4{
+  color: black;
+}
+
+p{
+  color: #000000;
+}
+
+/*image */
+img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0; 
+  display: block; 
+  margin: auto; 
+  padding-bottom: 20px;
+}

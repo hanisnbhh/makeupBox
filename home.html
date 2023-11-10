@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- PAGE TITLE -->
+    <title>Makeup Box</title>
+    <!--STYLE AND JAVASCRIPT-->
+    <link rel="stylesheet" href="home.css">
+
+  </head>
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+      <!-- LOGO -->
+      <img src="logo.png" class="logo">
+      <div class="nav-content">
+          <a href="home.html">HOME</a>
+          <a href="crud.html">TOP 5</a>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <div class="container">
+      <center>
+        <h1>Welcome to Glam Goddess!</h1>
+        <br><br>
+        <h4>Pick your favourite make-up now!</h4>
+        <br>
+        <!-- DROPDOWN FOR BRAND -->
+        <select id="brandDropdown" onchange="getProductsByBrand()"></select>
+        <!-- DROPDOWN FOR PRODUCT TYPE -->
+        <select id="productTypeDropdown" onchange="getProductsByType()"></select>
+      </center>
+    </div>
+
+    <!-- MAKEUP DETAILS MODAL -->
+    <div id="makeupModal" class="modal">
+      <div class="modal-content">
+        <!-- CLOSE BUTTON -->
+        <span class="close" onclick="closeModal()">&times;</span>
+        <!-- PRODUCT DETAILS -->
+        <p><b>Name:</b> <span id="productNameSpan"></span></p>
+        <br>
+        <p><b>Type:</b> <span id="productTypeSpan"></span></p>
+        <br>
+        <p><b>Description:</b> <span id="descriptionSpan"></span></p>
+        <br>
+        <p><b>Price:</b> <span id="priceSpan"></span></p>
+        <br>
+        <p><b>Link:</b> <span id="productLinkSpan"></span></p>
+      </div>
+    </div>
+
+    <!-- LIST OF PRODUCTS -->
+    <br>
+    <h2>Products:</h2>
+    <br>
+    <ul id="productList"></ul>    
+    
+    <!--JAVASCRIPT -->
+    <script src="home.js"></script>
+  </body>
+</html>
